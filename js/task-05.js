@@ -2,7 +2,7 @@ let textInput = document.getElementById("name-input");
 let nameOutput = document.getElementById("name-output");
 
 const updateName = () => {
-  if (!textInput.value) {
+  if (!textInput.value.trim()) {
     nameOutput.innerHTML = "Anonymous";
   }
 };

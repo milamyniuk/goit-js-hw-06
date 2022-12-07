@@ -14,8 +14,9 @@ for (let i = 0; i < ingredients.length; i++) {
   let element = document.createElement("li");
   element.className = "item";
   element.innerText = ingredients[i];
-  ingredientsCatElement.appendChild(element);
+  ingredientsLi.push(element);
 }
+ingredientsCatElement.append(...ingredientsLi);
 
 // const ingredientsLi = document.getElementById("ingredients");
 // const markup = ingredients.map(

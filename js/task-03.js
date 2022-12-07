@@ -18,14 +18,12 @@ const listItem = document.querySelector(".gallery-item");
 
 const markup = images.map(
   (image) =>
-    `<li class='gallery-item'><img src='${image.url}' alt='${image.alt}'/></li>`
+    `<li class='gallery-item'><img width='600px' height='400px'src='${image.url}' alt='${image.alt}'/></li>`
 );
 
 list.insertAdjacentHTML("beforeend", markup);
 
 //container
 list.style.display = "flex";
-
-//item
-
-listItem.style.padding = "100px";
+list.style.display.image;
+list.style.listStyle = "none";

@@ -6,7 +6,8 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+let randomColor = getRandomHexColor();
 button.addEventListener("click", () => {
-  document.body.style.backgroundColor = getRandomHexColor();
-  spanText.innerHTML = getRandomHexColor();
+  document.body.style.backgroundColor = randomColor;
+  spanText.innerHTML = randomColor;
 });
